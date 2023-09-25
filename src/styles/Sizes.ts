@@ -5,7 +5,7 @@ export const sizes = {
     large: "32px",
     main: "24px",
     small: "16px",
-    xsmall: "12px",
+    xsmall: "14px",
     xxsmall: "8px",
     xxxsmall: "4px",
   }

@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <HomeContainer>
+        <Logo></Logo>
         <HomeTitle>Bem vindo, Thomas!</HomeTitle>
         <HomeText>Tudo pronto! Como podemos te ajudar?</HomeText>
         <Button>Cadastrar novo veículo</Button>
