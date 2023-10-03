@@ -4,6 +4,10 @@ import { Button } from "../../components/Button/Button";
 import { Logo } from "../../components/Logo/Logo";
 import { useNavigate } from "react-router-dom";
 import { routes } from "../../routes";
+import { SyntheticEvent } from "react";
+import { Header } from "../../components/Header/Header";
+import { ButtonContainer } from "../../components/ButtonContainer/ButtonContainer";
+import { Slider } from "../../components/Slider/Slider";
 
 export default function Home() {
   const navegate = useNavigate ()
@@ -14,13 +18,21 @@ export default function Home() {
 
   return (
     <Layout>
+      <Header/>
       <HomeContainer>
-        <Logo></Logo>
-        <HomeTitle>Bem vindo, Thomas!</HomeTitle>
-        <HomeText>Tudo pronto! Como podemos te ajudar?</HomeText>
-        <Button onClick={handleClickRegisterV}>Cadastrar novo veículo</Button>
-        <Button>Editar meu veículo</Button>
-        <Button>Editar meu perfil</Button>
+        <ButtonContainer>
+          <Button inverse="inverse"> Primeiros Passos</Button>
+          <Button>Meu perfil</Button>
+          <Button>Meus veículos</Button>
+          <Button>Ajuda</Button>
+          <Button>Configurações</Button>
+          <Button>Criadores</Button>
+        </ButtonContainer>
+        <Slider>
+        <Button>Criadores</Button>
+        <Button>Criadores</Button>
+        <Button>Criadores</Button>
+        </Slider>
       </HomeContainer>
     </Layout>
   )

@@ -12,8 +12,8 @@ export const LogoContainer = styled.div`
 `;
 export const LogoImg = styled.img`
     width:100%;
-    width: 60px; 
-    height: 60px;
+    width: 80px; 
+    height: 80px;
 `
 export const LogoText = styled.span`
   font-weight: 100;

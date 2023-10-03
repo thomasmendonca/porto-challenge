@@ -2,23 +2,46 @@ import styled from "styled-components";
 import { colors } from "../../styles/Colors"
 import { sizes } from "../../styles/Sizes"
 
+
 export const ElementButton = styled.button `
     border: 0;
     padding: ${sizes.xxsmall};
-    width: 230px;
-    height: ${sizes.xxlarge};
-    background-color: ${colors.primary.pdark};
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+    height: ${sizes.xlarge};
+    background-color: ${colors.secondary.lightgray};
     transition: box-shadow 0.3s ease;
     cursor: pointer;
-    text-transform: uppercase;
     font-size: ${sizes.xsmall};
-    font-weight: 400;
-    color: ${colors.secondary.slight};
+    font-weight: 500;
+    color: ${colors.primary.dark};
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin: ${sizes.xxxsmall} 0;
+    &:hover{
+      color:${colors.commonlight.clight};
+      background-color: ${colors.primary.ligthblue};
+    }
+    &:focus{
+      outline: none;
+    }
+
+    ${(props) =>
+    props.inverse&&
+    `
+    color:${colors.commonlight.clight};
+    background-color: ${colors.primary.ligthblue};
 
     &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+      color: ${colors.primary.dark};
+      background-color: ${colors.secondary.lightgray};
+    }
+    &:focus{
+      color: ${colors.primary.dark};
+      background-color: ${colors.secondary.lightgray};  
+      outline: none;
+    }
+    `}
+
+
+    
 `

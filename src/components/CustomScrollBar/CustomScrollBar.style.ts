@@ -6,19 +6,19 @@ export const ScrollBar = styled.div`
 
   /* Estiliza a barra de rolagem */
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: ${colors.secondary.slight};
+    background-color: ${colors.primary.blue};
     border-radius: 10px;
 
     &:hover {
-        background-color: ${colors.secondary.slight};
+        background-color: ${colors.secondary.gray};
     }
   }
 
   &::-webkit-scrollbar-track {
-    background-color: ${colors.primary.pdark};
+    background-color: ${colors.secondary.gray};
   }
 `

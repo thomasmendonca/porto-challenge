@@ -3,7 +3,7 @@ import { colors } from "../../styles/Colors";
 import { sizes } from "../../styles/Sizes";
 
 export const ElementFooter = styled.footer`
-    background-color: ${colors.primary.pdark};
+    background-color: ${colors.primary.dark};
     height: 120px;
     display: flex;
     justify-content: center;
@@ -21,6 +21,6 @@ export const FooterContent = styled.div`
 `
 export const FooterText = styled.span`
     color: ${colors.commonlight.clight};
-    
+    font-weight: 100;
     
 `

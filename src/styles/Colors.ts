@@ -1,11 +1,12 @@
 export const colors ={
     primary:{
-        pdark: "#1E1F21",
-        plight: "#F0F0F0",
+        blue: "#00A1FC",
+        ligthblue: "#52C3FE",
+        dark: "#555555"
     },
     secondary:{
-        sdark: "#E0AD00",
-        slight: "#DDDDDD"
+        gray:"#C7C7C7",
+        lightgray:"#F7F7F7"
     },
     commonlight:{
         clight: "#FFFFFF"

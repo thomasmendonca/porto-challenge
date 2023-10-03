@@ -2,16 +2,15 @@ import { ElementButton } from "./Button.style"
 
 interface ButtonProps {
   children: React.ReactNode
-  onClick?: React.ReactEventHandler
+  inverse?: string
+  link?: string
+  onClick: React.ReactEventHandler
+  
 }
 
-export const Button = ({
-  children,
-  onClick
-
-}: ButtonProps) => {
+export const Button = ({children,inverse,link,onClick,...rest}: ButtonProps) => {
   return (
-    <ElementButton onClick={onClick}>
+    <ElementButton inverse={inverse} link={link} onClick={onClick} {...rest}>
       {children}
     </ElementButton>
   )
