@@ -1,5 +1,5 @@
 import { Button } from "../../components/Button/Button";
-import { Select } from "../../components/Input/InputSelect.style";
+
 import { Layout } from "../../components/Layout/Layout";
 import { useNavigate } from "react-router-dom";
 import { routes } from "../../routes";
@@ -17,11 +17,7 @@ export default function CadastroVeiculos (){
             <RegisterVehicleContainer>
                 <RVTitle>Cadastre um novo veículo</RVTitle>
                 <RVText>Preencha os dados do seu veículo:</RVText>
-                <Select></Select>
-                <Select></Select>
-                <Select></Select>
-                <Select></Select>
-                <Select></Select>
+                
                 <Button>Cadastrar Veículo</Button>
                 <Button onClick={handleClickBack}>Voltar</Button>
             </RegisterVehicleContainer>

@@ -2,7 +2,10 @@ import styled from "styled-components"
 
 export const ElementMain = styled.main`
   margin: 0 auto;
-  width: 95%;
+  width: 96%;
+  margin-left:2%;
   min-height: 100vh;
+  
+
  
 `

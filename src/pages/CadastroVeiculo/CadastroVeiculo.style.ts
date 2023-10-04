@@ -16,13 +16,13 @@ export const  RegisterVehicleContainer = styled.div`
 
 `
 export const RVTitle = styled.h1`
-    color: ${colors.primary.pdark};
+    color: ${colors.primary.dark};
     font-size: ${sizes.main};
     text-align:center;
 
 `
 export const RVText = styled.p`
-    color: ${colors.primary.pdark};
+    color: ${colors.primary.dark};
     font-size: ${sizes.small};
     text-align:center;
 

@@ -8,7 +8,6 @@ export const HomeContainer = styled.div`
   align-items:center;
   gap: ${sizes.large};
   min-height: 80vh;
-  padding: ${sizes.small};
   margin-top: ${sizes.large}
 `
 export const HomeTitle = styled.h1`

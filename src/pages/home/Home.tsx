@@ -8,6 +8,10 @@ import { SyntheticEvent } from "react";
 import { Header } from "../../components/Header/Header";
 import { ButtonContainer } from "../../components/ButtonContainer/ButtonContainer";
 import { Slider } from "../../components/Slider/Slider";
+import {SliderButton}from '../../components/SliderButton/SliderButton'
+import { Card} from "../../components/Card/Card";
+import ImgGuincho from"../../assets/guinchoporto.jpeg"
+import ImgCaminhao from"../../assets/caminhaoporto.jpeg"
 
 export default function Home() {
   const navegate = useNavigate ()
@@ -20,18 +24,28 @@ export default function Home() {
     <Layout>
       <Header/>
       <HomeContainer>
+      <SliderButton>
         <ButtonContainer>
           <Button inverse="inverse"> Primeiros Passos</Button>
           <Button>Meu perfil</Button>
-          <Button>Meus veículos</Button>
           <Button>Ajuda</Button>
+          <Button>Meus veículos</Button>
           <Button>Configurações</Button>
           <Button>Criadores</Button>
         </ButtonContainer>
+      </SliderButton>
         <Slider>
-        <Button>Criadores</Button>
-        <Button>Criadores</Button>
-        <Button>Criadores</Button>
+        <Card img={ImgCaminhao}>
+            <Button inverse="inverse">Cadastrar Veículo</Button>
+          </Card>
+          <Card img={ImgGuincho}>
+            <Button inverse="inverse">Acionar Sinistro</Button>
+          </Card>
+          
+          
+          
+          
+          
         </Slider>
       </HomeContainer>
     </Layout>

@@ -5,8 +5,9 @@ import { sizes } from "../../styles/Sizes"
 
 export const ElementButton = styled.button `
     border: 0;
-    padding: ${sizes.xxsmall};
-    min-width: 100px;
+    padding: 0 ${sizes.xxsmall};
+    white-space: nowrap;
+    width: auto;
     height: ${sizes.xlarge};
     background-color: ${colors.secondary.lightgray};
     transition: box-shadow 0.3s ease;
