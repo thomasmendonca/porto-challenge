@@ -12,6 +12,8 @@ import {SliderButton}from '../../components/SliderButton/SliderButton'
 import { Card} from "../../components/Card/Card";
 import ImgGuincho from"../../assets/guinchoporto.jpeg"
 import ImgCaminhao from"../../assets/caminhaoporto.jpeg"
+import { Footer } from "../../components/Footer/Footer";
+
 
 export default function Home() {
   const navegate = useNavigate ()
@@ -41,13 +43,9 @@ export default function Home() {
           <Card img={ImgGuincho}>
             <Button inverse="inverse">Acionar Sinistro</Button>
           </Card>
-          
-          
-          
-          
-          
         </Slider>
       </HomeContainer>
     </Layout>
+    
   )
 }

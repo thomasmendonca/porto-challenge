@@ -3,10 +3,10 @@ import { colors } from "../../../styles/Colors";
 import { sizes } from "../../../styles/Sizes";
 
 export const SearchElement = styled.div `
-    height: 60px;
-    width: 90%;
+    height: 50px;
+    width: 95%;
     border: 1px solid${colors.secondary.gray};
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     display:flex;
     justify-content: space-between;

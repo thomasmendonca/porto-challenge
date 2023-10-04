@@ -19,4 +19,5 @@ export const CardImageContainer = styled.img`
     height:auto;
     width: auto;
     border-radius:20px 20px 0 0;
+    opacity:0.6;
 `

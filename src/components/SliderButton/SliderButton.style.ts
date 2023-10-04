@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { sizes } from "../../styles/Sizes";
 
 export const SliderButtonContainer = styled.div`
-    width: 100%;
+    width: 95%;
     height:auto;  
     display:flex;
     align-items: center;
