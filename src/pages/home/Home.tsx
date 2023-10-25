@@ -12,7 +12,7 @@ import {SliderButton}from '../../components/SliderButton/SliderButton'
 import { Card} from "../../components/Card/Card";
 import ImgGuincho from"../../assets/guinchoporto.jpeg"
 import ImgCaminhao from"../../assets/caminhaoporto.jpeg"
-import { Footer } from "../../components/Footer/Footer";
+
 
 
 export default function Home() {
@@ -21,7 +21,9 @@ export default function Home() {
   const handleClickRegisterV = () =>{
     navegate(routes.cadastroVeiculos)
   }
-
+  const handleClickAcionarSinistro = ()=>{
+    navegate(routes.acionarSinistro)
+  }
   return (
     <Layout>
       <Header/>
@@ -38,10 +40,10 @@ export default function Home() {
       </SliderButton>
         <Slider>
         <Card img={ImgCaminhao}>
-            <Button inverse="inverse">Cadastrar Veículo</Button>
+            <Button inverse="inverse" onClick={handleClickRegisterV}>Cadastrar Veículo</Button>
           </Card>
           <Card img={ImgGuincho}>
-            <Button inverse="inverse">Acionar Sinistro</Button>
+            <Button inverse="inverse" onClick={handleClickAcionarSinistro}>Acionar Sinistro</Button>
           </Card>
         </Slider>
       </HomeContainer>

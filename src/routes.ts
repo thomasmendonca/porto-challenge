@@ -1,5 +1,5 @@
 export const routes = {
     home:'/',
-    cadastroVeiculos: '/cadastro-veiculos'
-    
+    cadastroVeiculos: '/cadastro-veiculos',
+    acionarSinistro: '/acionar-sinistro'
 }
