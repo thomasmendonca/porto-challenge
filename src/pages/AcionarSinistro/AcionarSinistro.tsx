@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { 
-    Wrapper,
+    WrapperBox,
     Title,
     Text,
     InputFile,
@@ -80,7 +80,7 @@ export default function AcionarSinistro() {
 
   return (
     <Layout>
-      <Wrapper>
+      <WrapperBox>
         {/* <h1>Classificação</h1>
 
         <input type="file" accept="image/*" onChange={handleFileChange} />
@@ -98,7 +98,7 @@ export default function AcionarSinistro() {
           <ImgWrapper>
           {imageURL && <img src={imageURL} alt="Imagem Enviada" />}
           </ImgWrapper>
-       </Wrapper>
+       </WrapperBox>
       <ContainerButton>
             <Button onClick={handleUpload} inverse="inverse">Enviar</Button>
             <Button onClick={handleBack}>Voltar</Button>

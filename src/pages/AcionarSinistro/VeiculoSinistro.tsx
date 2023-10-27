@@ -3,7 +3,7 @@ import { Card } from "../../components/Card/Card";
 import { Layout } from "../../components/Layout/Layout"
 import { routes } from "../../routes";
 import { 
-    Wrapper,
+    WrapperBox,
     Title,
     Text,
     InputFile,
@@ -27,7 +27,7 @@ export default function EnderecoSinistro() {
     }
     return (
         <Layout>
-            <Wrapper>
+            <WrapperBox>
                 <Title>Vamos Começar!</Title>
                 <Text>Selecione abaixo o seu veículo danificado para que possamos te ajudar:</Text>
                 <CardContainer>
@@ -45,7 +45,7 @@ export default function EnderecoSinistro() {
                     <Button onClick={handleBack}>Voltar</Button>
                 </ContainerButton>
                 
-            </Wrapper>
+            </WrapperBox>
         </Layout>
 
 

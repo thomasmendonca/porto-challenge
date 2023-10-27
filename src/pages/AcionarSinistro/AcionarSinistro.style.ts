@@ -29,7 +29,7 @@ export const Label = styled.label`
 
 `
 
-export const  Wrapper = styled.div`
+export const  WrapperBox = styled.div`
    display: flex;
    flex-direction: column;
    margin-top: 2rem;
