@@ -6,12 +6,22 @@ import {
     InputFile,
     Label,
     ContainerButton,
+    ImgWrapper
 
 } from "./AcionarSinistro.style";
 import { Layout } from "../../components/Layout/Layout";
 import { Button } from "../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../../routes";
+
 
 export default function AcionarSinistro() {
+  const navigate = useNavigate()
+
+  const handleBack = () =>{
+    navigate(routes.home)
+  }
+
   const [data, setData] = useState({});
 
   const [selectedFile, setSelectedFile] = useState(null);
@@ -85,12 +95,15 @@ export default function AcionarSinistro() {
         <Text>Faça o upload da foto de seu veículo danificado para que possamos te auxiliar com nosso melhor guincho.</Text>
         <InputFile type="file" accept="image/*" onChange={handleFileChange} id="inputFile"/>
         <Label htmlFor="inputFile">Clique para carregar a imagem de seu veículo</Label>
-        {imageURL && <img src={imageURL} alt="Imagem Enviada" />}
-      </Wrapper>
+          <ImgWrapper>
+          {imageURL && <img src={imageURL} alt="Imagem Enviada" />}
+          </ImgWrapper>
+       </Wrapper>
       <ContainerButton>
             <Button onClick={handleUpload} inverse="inverse">Enviar</Button>
+            <Button onClick={handleBack}>Voltar</Button>
       </ContainerButton>
-      <h1>{data.prediction}</h1>
+      <Text>{data.prediction}</Text>
     </Layout>
   )
 }

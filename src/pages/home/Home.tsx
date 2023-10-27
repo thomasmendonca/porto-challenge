@@ -22,7 +22,7 @@ export default function Home() {
     navegate(routes.cadastroVeiculos)
   }
   const handleClickAcionarSinistro = ()=>{
-    navegate(routes.acionarSinistro)
+    navegate(routes.veiculoSinistro)
   }
   return (
     <Layout>
