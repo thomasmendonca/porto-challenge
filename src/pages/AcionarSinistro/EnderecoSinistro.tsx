@@ -21,20 +21,23 @@ import GeocodingComponent from "../../components/GeocodingComponents";
 
 
 export default function VeiculoSinistro() {
-    const ref = React.useRef<HTMLDivElement>(null);
-    const [map, setMap] = React.useState<google.maps.Map>();
 
-    React.useEffect(() => {
-        if (ref.current && !map) {
-            setMap(new window.google.maps.Map(ref.current, {}));
-        }
-    }, [ref, map]);
+    const navigate = useNavigate()
+    const handleNext = ()=>{
+        navigate(routes.acionarSinistro)
+    }
+    const handleBack = ()=>{
+        navigate(routes.veiculoSinistro)
+    }
     return (
         <Layout>
             <WrapperBox>
                 <Title>Endereço</Title>
                 <Text>Por favor, escolha sua localização para que possamos encontrá-lo rapidamente.</Text>
-               <GeocodingComponent apiKey="apiKey"></GeocodingComponent>
+                <ContainerButton>
+                    <Button onClick={handleNext} inverse="inverse">Continuar</Button>
+                    <Button onClick={handleBack}>Voltar</Button>
+                </ContainerButton>
 
             </WrapperBox>
         </Layout>
