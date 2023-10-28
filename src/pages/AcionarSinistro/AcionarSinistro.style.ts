@@ -107,3 +107,12 @@ export const LabelVeiculo = styled.label`
     
     
 `
+export const ContainerInput = styled.div`
+    min-height: 20rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+`

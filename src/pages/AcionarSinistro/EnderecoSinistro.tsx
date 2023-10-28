@@ -12,12 +12,14 @@ import {
     ImgWrapper,
     CardContainer,
     LabelVeiculo,
-    OptionVeiculo
+    OptionVeiculo,
+    ContainerInput
 
 } from "./AcionarSinistro.style";
 import { Button } from "../../components/Button/Button";
 import React from "react";
 import GeocodingComponent from "../../components/GeocodingComponents";
+import { Input } from "../../components/Input/InputText/InputText.style";
 
 
 export default function VeiculoSinistro() {
@@ -33,12 +35,20 @@ export default function VeiculoSinistro() {
         <Layout>
             <WrapperBox>
                 <Title>Endereço</Title>
-                <Text>Por favor, escolha sua localização para que possamos encontrá-lo rapidamente.</Text>
+                <Text>Preencha as informações do local do acidente.</Text>
+                <ContainerInput>
+                    <Input placeholder="Digite o nome do logradouro (rua, av, etc)"/>
+                    <Input placeholder="Digite o número"/>
+                    <Input placeholder="Digite o bairro"/>
+                    <Input placeholder="Digite a cidade"/>
+                    <Input placeholder="Digite o estado"/>
+                    <Input placeholder="Digite o CEP"/>
+                </ContainerInput>
+                
                 <ContainerButton>
                     <Button onClick={handleNext} inverse="inverse">Continuar</Button>
                     <Button onClick={handleBack}>Voltar</Button>
                 </ContainerButton>
-
             </WrapperBox>
         </Layout>
 
