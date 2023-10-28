@@ -1,6 +1,11 @@
 import { Input } from "./InputText.style"
-export const InputText= () =>{
+interface InputTextProps{
+    placeholder?: string,
+}
+export const InputText= ({placeholder}:InputTextProps) =>{
     return(
-        <Input/>
+        <Input placeholder={placeholder}/>
     )
 }
+
+

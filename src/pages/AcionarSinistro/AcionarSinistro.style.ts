@@ -54,6 +54,7 @@ export const ContainerButton = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
 `
 export const ImgWrapper = styled.div`

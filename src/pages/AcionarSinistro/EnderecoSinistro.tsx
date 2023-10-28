@@ -19,7 +19,7 @@ import {
 import { Button } from "../../components/Button/Button";
 import React from "react";
 import GeocodingComponent from "../../components/GeocodingComponents";
-import { Input } from "../../components/Input/InputText/InputText.style";
+import { InputText } from "../../components/Input/InputText/InputText";
 
 
 export default function VeiculoSinistro() {
@@ -37,12 +37,12 @@ export default function VeiculoSinistro() {
                 <Title>Endereço</Title>
                 <Text>Preencha as informações do local do acidente.</Text>
                 <ContainerInput>
-                    <Input placeholder="Digite o nome do logradouro (rua, av, etc)"/>
-                    <Input placeholder="Digite o número"/>
-                    <Input placeholder="Digite o bairro"/>
-                    <Input placeholder="Digite a cidade"/>
-                    <Input placeholder="Digite o estado"/>
-                    <Input placeholder="Digite o CEP"/>
+                    <InputText placeholder="Digite o nome do logradouro (rua, av, etc)"/>
+                    <InputText placeholder="Digite o número"/>
+                    <InputText placeholder="Digite o bairro"/>
+                    <InputText placeholder="Digite a cidade"/>
+                    <InputText placeholder="Digite o estado"/>
+                    <InputText placeholder="Digite o CEP"/>
                 </ContainerInput>
                 
                 <ContainerButton>
